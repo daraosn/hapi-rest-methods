@@ -1,0 +1,36 @@
+{
+  "name": "hapi-rest-methods",
+  "version": "1.0.0",
+  "description": "Add REST HTTP methods directly to server object of hapi.JS framework to easily add routes",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daraosn/hapi-rest-methods.git"
+  },
+  "keywords": [
+    "hapi",
+    "plugin",
+    "rest",
+    "methods",
+    "routes",
+    "handler",
+    "easy",
+    "simple"
+  ],
+  "author": "Diego Araos <d@wehack.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daraosn/hapi-rest-methods/issues"
+  },
+  "homepage": "https://github.com/daraosn/hapi-rest-methods#readme",
+  "devDependencies": {
+    "hapi": "^13.3.0",
+    "jasmine": "^2.4.1"
+  }
+}
