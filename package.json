@@ -1,6 +1,6 @@
 {
   "name": "hapi-rest-methods",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add REST HTTP methods directly to server object of hapi.JS framework to easily add routes",
   "main": "lib/index.js",
   "directories": {
