@@ -28,7 +28,7 @@ server.get('/foo', function(request, reply) {
 
 Simple.
 
-It also supports `post()`, `put()`, `patch()`, `delete()` and `options()`.
+It also supports `.post()`, `.put()`, `.patch()`, `.delete()` and `.options()`. Use `.any()` to match all of the (alias for `*` method).
 
 
 ## Usage
@@ -59,6 +59,22 @@ Plays well with other plugins, such as hapi [inert](https://github.com/hapijs/in
   server.register(restMethods);
   server.register(inert);
   server.get('/', { file: 'public/index.html' });
+```
+
+And if you need to [config routes](http://hapijs.com/api#route-configuration), just pass 3 parameters `(path, config, handler)`:
+```
+  var routeConfig = config: {
+    description: 'Say hello!',
+    notes: 'The user parameter defaults to \'stranger\' if unspecified',
+    tags: ['api', 'greeting'],
+    auth: { ... },
+    cache: { ... }
+    // ...
+  }
+
+  server.delete('/the-internet', routeConfig, function(request, reply) {
+    reply('...');
+  });
 ```
 
 ## Issues & Contributing
